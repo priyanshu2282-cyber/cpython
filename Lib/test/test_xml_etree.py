@@ -4764,7 +4764,7 @@ class TestModule(unittest.TestCase):
         ) as cm:
                 getattr(ET, "VERSION")
         self.assertEqual(cm.filename, __file__)
-    
+
     def test_subelement_parent_positional_only(self):
         root = ET.Element("root")
         with self.assertRaises(TypeError):
